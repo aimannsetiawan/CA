@@ -57,27 +57,27 @@ public class KNNGUITable extends JFrame {
 		table_3 = new JTable(Knn4 , columnheaders);
 		scrollPane_3.setViewportView(table_3);
 		
-		JLabel lblNewLabel = new JLabel("High load rate during peak hours");
+		JLabel lblNewLabel = new JLabel("High load rate during peak hours (Cluster 1)");
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel.setFont(new Font("Trebuchet MS", Font.BOLD , 18));
+		lblNewLabel.setFont(new Font("Trebuchet MS", Font.BOLD , 14));
 		lblNewLabel.setBounds(81, 0, 326, 49);
 		contentPane.add(lblNewLabel);
 		
-		JLabel lblLowLoadRate = new JLabel("Low load rate during night");
+		JLabel lblLowLoadRate = new JLabel("Low load rate during night (Cluster 2)");
 		lblLowLoadRate.setHorizontalAlignment(SwingConstants.CENTER);
-		lblLowLoadRate.setFont(new Font("Trebuchet MS", Font.BOLD , 18));
+		lblLowLoadRate.setFont(new Font("Trebuchet MS", Font.BOLD , 14));
 		lblLowLoadRate.setBounds(510, 0, 326, 49);
 		contentPane.add(lblLowLoadRate);
 		
-		JLabel lblDisconnectionOfA = new JLabel("Disconnection of a line for maintenance");
+		JLabel lblDisconnectionOfA = new JLabel("Disconnection of a line for maintenance (Cluster 3)");
 		lblDisconnectionOfA.setHorizontalAlignment(SwingConstants.CENTER);
-		lblDisconnectionOfA.setFont(new Font("Trebuchet MS", Font.BOLD , 18));
+		lblDisconnectionOfA.setFont(new Font("Trebuchet MS", Font.BOLD , 14));
 		lblDisconnectionOfA.setBounds(70, 155, 350, 49);
 		contentPane.add(lblDisconnectionOfA);
 		
-		JLabel lblShutDownOf = new JLabel("Shut down of generator for maintenance");
+		JLabel lblShutDownOf = new JLabel("Shut down of generator for maintenance (Cluster 4)");
 		lblShutDownOf.setHorizontalAlignment(SwingConstants.CENTER);
-		lblShutDownOf.setFont(new Font("Trebuchet MS", Font.BOLD , 18));
+		lblShutDownOf.setFont(new Font("Trebuchet MS", Font.BOLD , 14));
 		lblShutDownOf.setBounds(495, 155, 350, 49);
 		contentPane.add(lblShutDownOf);
 		

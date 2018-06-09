@@ -57,26 +57,26 @@ public class KmeansGUITable extends JFrame {
 		table_3 = new JTable(Cluster4 , columnheaders);
 		scrollPane_3.setViewportView(table_3);
 		
-		JLabel lbl1 = new JLabel("High load rate during peak hours");
-		lbl1.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 17));
+		JLabel lbl1 = new JLabel("High load rate during peak hours (Cluster 1)");
+		lbl1.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 12));
 		lbl1.setBounds(81, 0, 326, 49);
 		lbl1.setHorizontalAlignment(SwingConstants.CENTER);
 		contentPane.add(lbl1);
 		
-		JLabel lbl2 = new JLabel("Low load rate during night");
-		lbl2.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 17));
+		JLabel lbl2 = new JLabel("Low load rate during night (Cluster 2)");
+		lbl2.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 12));
 		lbl2.setBounds(520, 0, 326, 49);
 		lbl2.setHorizontalAlignment(SwingConstants.CENTER);
 		contentPane.add(lbl2);
 		
-		JLabel lbl3 = new JLabel("Disconnection of a line for maintenance");
-		lbl3.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 17));
+		JLabel lbl3 = new JLabel("Disconnection of a line for maintenance (Cluster 3)");
+		lbl3.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 12));
 		lbl3.setBounds(81, 259, 326, 49);
 		lbl3.setHorizontalAlignment(SwingConstants.CENTER);
 		contentPane.add(lbl3);
 		
-		JLabel lbl4 = new JLabel("Shut down of generator for maintenance");
-		lbl4.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 17));
+		JLabel lbl4 = new JLabel("Shut down of generator for maintenance (Cluster 4)");
+		lbl4.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 12));
 		lbl4.setBounds(530, 259, 340, 49);
 		lbl4.setHorizontalAlignment(SwingConstants.CENTER);
 		contentPane.add(lbl4);
