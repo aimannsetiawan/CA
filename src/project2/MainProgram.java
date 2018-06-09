@@ -199,7 +199,7 @@ public class MainProgram {
 			           double V2=clustercenter4[m1];
 			           double A2=clustercenter4[m1+9];
 			           
-			           double distance= (Math.pow((V1*Math.cos(Math.toRadians(A1))-V2*Math.cos(Math.toRadians(A2))), 2)+Math.pow((V1*Math.sin(Math.toRadians(A1))-V2*Math.sin(Math.toRadians(A2))), 2));
+			           double distance= Math.sqrt(Math.pow((V1*Math.cos(Math.toRadians(A1))-V2*Math.cos(Math.toRadians(A2))), 2)+Math.pow((V1*Math.sin(Math.toRadians(A1))-V2*Math.sin(Math.toRadians(A2))), 2));
 			           distance4+=distance;
 			           EucD4=Math.sqrt(distance4);
 			                     
@@ -461,31 +461,27 @@ public class MainProgram {
 			ArrayList<Double[]> GUIkMEANS3= new ArrayList<Double[]>();
 			ArrayList<Double[]> GUIkMEANS4= new ArrayList<Double[]>();
 			
-			for (int i=0 ; i<cluster1.size(); i++) {
+			for (int i=0 ; i<Resultscls1.size(); i++) {
 				Double[]GUIkMEANS1list = new Double[2];
-				GUIkMEANS1list[0]=cluster1.get(i).gettime();
-				GUIkMEANS1list[1]=(double) 1;
+				GUIkMEANS1list[0]=Resultscls1.get(i);
 				GUIkMEANS1.add(GUIkMEANS1list);
 			}
 			
-			for (int i=0 ; i<cluster2.size(); i++) {
+			for (int i=0 ; i<Resultscls2.size(); i++) {
 				Double[]GUIkMEANS2list = new Double[2];
-				GUIkMEANS2list[0]=cluster2.get(i).gettime();
-				GUIkMEANS2list[1]=(double) 2;
+				GUIkMEANS2list[0]=Resultscls2.get(i);
 				GUIkMEANS2.add(GUIkMEANS2list);
 			}
 			
-			for (int i=0 ; i<cluster3.size(); i++) {
+			for (int i=0 ; i<Resultscls3.size(); i++) {
 				Double[]GUIkMEANS3list = new Double[2];
-				GUIkMEANS3list[0]=cluster3.get(i).gettime();
-				GUIkMEANS3list[1]=(double) 3;
+				GUIkMEANS3list[0]=Resultscls3.get(i);
 				GUIkMEANS3.add(GUIkMEANS3list);
 			}
 			
-			for (int i=0 ; i<cluster4.size(); i++) {
+			for (int i=0 ; i<Resultscls4.size(); i++) {
 				Double[]GUIkMEANS4list = new Double[2];
-				GUIkMEANS4list[0]=cluster4.get(i).gettime();
-				GUIkMEANS4list[1]=(double) 4;
+				GUIkMEANS4list[0]=Resultscls4.get(i);
 				GUIkMEANS4.add(GUIkMEANS4list);
 			}
 			
@@ -499,23 +495,19 @@ public class MainProgram {
 
 			for (int i = 0 ; i < GUIkMEANS1.size() ; i++){
 				GUIkMEANS1Table[i][0]= Double.toString(GUIkMEANS1.get(i)[0]);
-				GUIkMEANS1Table[i][1]= Double.toString(GUIkMEANS1.get(i)[1]);
-			}
+				}
 			
 
 			for (int i = 0 ; i < GUIkMEANS2.size() ; i++){
 				GUIkMEANS2Table[i][0]=Double.toString(GUIkMEANS2.get(i)[0]);
-				GUIkMEANS2Table[i][1]=Double.toString(GUIkMEANS2.get(i)[1]);
 			}
 
 			for (int i = 0 ; i < GUIkMEANS3.size() ; i++){
 				GUIkMEANS3Table[i][0]=Double.toString(GUIkMEANS3.get(i)[0]);
-				GUIkMEANS3Table[i][1]=Double.toString(GUIkMEANS3.get(i)[1]);
 			}
 
 			for (int i = 0 ; i < GUIkMEANS4.size() ; i++){
 				GUIkMEANS4Table[i][0]=Double.toString(GUIkMEANS4.get(i)[0]);
-				GUIkMEANS4Table[i][1]=Double.toString(GUIkMEANS4.get(i)[1]);
 			}
 			
 				
@@ -675,28 +667,24 @@ if (CL1 >= CL2 && CL1 >= CL3 && CL1 >= CL4) {
 Resutclf1.add(analog.get(i).gettime());
 Double[]GUIkNN1list = new Double[2];
 GUIkNN1list[0]=analog.get(i).gettime();
-GUIkNN1list[1]=(double) 1;
 GUIkNN1.add(GUIkNN1list);
 ;}
 else if (CL2 >= CL1 && CL2 >= CL3 && CL2 >= CL4) {
 Resutclf2.add(analog.get(i).gettime());
 Double[]GUIkNN2list = new Double[2];
 GUIkNN2list[0]=analog.get(i).gettime();
-GUIkNN2list[1]=(double) 2;
 GUIkNN2.add(GUIkNN2list);
 ;}
 else if  (CL3 >= CL1 && CL3 >= CL2 && CL3 >= CL4) {
 Resutclf3.add(analog.get(i).gettime());
 Double[]GUIkNN3list = new Double[2];
 GUIkNN3list[0]=analog.get(i).gettime();
-GUIkNN3list[1]=(double) 3;
 GUIkNN3.add(GUIkNN3list);
 ;}
 else if  (CL4 >= CL1 && CL4 >= CL2 && CL4 >= CL3) {
 Resutclf4.add(analog.get(i).gettime());
 Double[]GUIkNN4list = new Double[2];
 GUIkNN4list[0]=analog.get(i).gettime();
-GUIkNN4list[1]=(double) 4;
 GUIkNN4.add(GUIkNN4list);
 ;}
 
@@ -730,23 +718,23 @@ String[][]GUIkNN4Table = new String[GUIkNN4.size()][2];
 
 	for (int l = 0 ; l < GUIkNN1.size() ; l++){
 		GUIkNN1Table[l][0]= Double.toString(GUIkNN1.get(l)[0]);
-		GUIkNN1Table[l][1]= Double.toString(GUIkNN1.get(l)[1]);
+
 	}
 	
 
 	for (int l = 0 ; l < GUIkNN2.size() ; l++){
 		GUIkNN2Table[l][0]=Double.toString(GUIkNN2.get(l)[0]);
-		GUIkNN2Table[l][1]=Double.toString(GUIkNN2.get(l)[1]);
+	
 	}
 
 	for (int l = 0 ; l < GUIkNN3.size() ; l++){
 		GUIkNN3Table[l][0]=Double.toString(GUIkNN3.get(l)[0]);
-		GUIkNN3Table[l][1]=Double.toString(GUIkNN3.get(l)[1]);
+	
 	}
 
 	for (int l = 0 ; l < GUIkNN4.size() ; l++){
 		GUIkNN4Table[l][0]=Double.toString(GUIkNN4.get(l)[0]);
-		GUIkNN4Table[l][1]=Double.toString(GUIkNN4.get(l)[1]);
+	
 	}
 	
 	

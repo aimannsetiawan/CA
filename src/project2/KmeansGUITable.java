@@ -24,11 +24,11 @@ public class KmeansGUITable extends JFrame {
 
 	public KmeansGUITable(String[][]Cluster1 , String[][]Cluster2 , String[][]Cluster3 , String[][]Cluster4) {
 		
-		String[] columnheaders = {"Times" , "Cluster"};
+		String[] columnheaders = {"Times"};
 		setTitle("K-Means Clustering");
 		setBounds(100, 100, 959, 560);
 		contentPane = new JPanel();
-		contentPane.setBackground(Color.blue);
+		contentPane.setBackground(Color.getHSBColor(175, 238, 238));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);

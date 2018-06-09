@@ -21,7 +21,7 @@ public class KNNGUITable extends JFrame {
 	
 	public KNNGUITable(String[][]Knn1 , String[][]Knn2 , String[][]Knn3 , String[][]Knn4) {
 		
-		String[] columnheaders = {"Times" , "Cluster"};
+		String[] columnheaders = {"Times"};
 		setTitle("K-Nearest Neighbour Classification");
 		setBounds(100, 100, 940, 380);
 		contentPane = new JPanel();
