@@ -1,6 +1,6 @@
 Dear examiner
 
-Before you run this program in eclipse, please right click on this project folder --> new --> source folder --> add 'img'
+Before you run this program in eclipse, please right click on this project folder --> new --> source folder -->CA Master --> add 'img folder'
 the folder store the KTH logo for GUI, we dont now some how if we download this repository form github, the img folder is not added automatically
 and will cause error on GUI, so please add the img folder, the folder is in this repository
 
